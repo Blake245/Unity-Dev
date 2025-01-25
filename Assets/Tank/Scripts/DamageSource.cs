@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DamageSource : MonoBehaviour
@@ -15,6 +16,14 @@ public class DamageSource : MonoBehaviour
         if(destroyOnhit )
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.TryGetComponent(out IDamagable component))
+        {
+            component.ApplyDamage(damage * Time.deltaTime);
         }
     }
 }

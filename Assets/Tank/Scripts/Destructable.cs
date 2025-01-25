@@ -7,6 +7,8 @@ public class Destructable : MonoBehaviour, IDamagable
 
     bool destroyed = false;
 
+    public float Health { get { return health; } set { health = (value < 0) ? 0 : value; } }
+
     public void ApplyDamage(float damage)
     {
         health -= damage;
