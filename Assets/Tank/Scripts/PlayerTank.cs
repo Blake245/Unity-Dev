@@ -44,6 +44,7 @@ public class PlayerTank : MonoBehaviour
         if (destructable.Health <= 0)
         {
             GameManager.Instance.SetGameOver();
+            Destroy(gameObject);
         }
     }
 

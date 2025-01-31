@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Basic/Scenes/Sample.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Tank/Scene/Title.unity
+    guid: 5da3f9a8eba8a3f42b189a4d01093637
+  - enabled: 1
+    path: Assets/Tank/Scene/Tank.unity
+    guid: 311a743c161948f4f8a9ae77b7a3e4a6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

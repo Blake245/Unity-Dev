@@ -12,7 +12,7 @@ public class HealthPickup : MonoBehaviour
         {
             if (other.TryGetComponent(out PlayerTank component))
             {
-                //component.health += healthAmount;
+                component.GetComponent<Destructable>().Health += healthAmount;
                 Destroy(gameObject);
                 if (pickupFX != null)
                 {

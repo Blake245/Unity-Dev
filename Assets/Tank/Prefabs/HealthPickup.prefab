@@ -9762,7 +9762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27a49177d3b262479d1c4b9e3032da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthAmount: 1
+  healthAmount: 10
   pickupFX: {fileID: 2557373117590594130, guid: 2635ce35b4c03134ab3d6d5cc5afbcc3, type: 3}
 --- !u!64 &8207829794943799186
 MeshCollider:

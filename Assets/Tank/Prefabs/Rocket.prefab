@@ -167,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   destroyOnhit: 1
+  onHitFx: {fileID: 22692479631091624, guid: 45828627c683cc34f9309d07b2f127a7, type: 3}
 --- !u!82 &44028189417295561
 AudioSource:
   m_ObjectHideFlags: 0
@@ -180,16 +181,16 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: f78ec73e9a8124740a8a5cfbc46798bd, type: 3}
   m_Resource: {fileID: 8300000, guid: f78ec73e9a8124740a8a5cfbc46798bd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.386
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 140
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 1.01
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

@@ -5,6 +5,7 @@ public class DamageSource : MonoBehaviour
 {
     [SerializeField] float damage = 1;
     [SerializeField] bool destroyOnhit = true;
+    [SerializeField] GameObject onHitFx;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -16,6 +17,7 @@ public class DamageSource : MonoBehaviour
         if(destroyOnhit )
         {
             Destroy(gameObject);
+            if (onHitFx != null) Instantiate(onHitFx, transform.position, Quaternion.identity);
         }
     }
 
